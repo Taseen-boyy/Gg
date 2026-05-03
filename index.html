@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Server Cloner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1 class="title">Start Cloning Process</h1>
+
+        <div class="input-group">
+            <label><span class="label-icon">🔑</span> Your Discord Token</label>
+            <input type="password" id="token" placeholder="Enter your token here...">
+        </div>
+
+        <div class="input-group">
+            <label><span class="label-icon">📋</span> Source Server ID</label>
+            <input type="text" id="sourceId" placeholder="Source server ID to clone">
+        </div>
+
+        <div class="input-group">
+            <label><span class="label-icon">🚢</span> Destination Server ID</label>
+            <input type="text" id="destId" placeholder="Destination server ID to clone to">
+        </div>
+
+        <div class="input-group">
+            <label>Select Mode:</label>
+            <select id="cloneType">
+                <option value="self">Self-Bot (Structure Only)</option>
+                <option value="bot">Full Bot (Logo + Messages)</option>
+            </select>
+        </div>
+
+        <button class="start-btn" onclick="sendToHelix()">
+            <span class="play-icon">▶</span> Start Cloning
+        </button>
+
+        <div class="console-box">
+            <label>Live Cloning Status:</label>
+            <div id="live-console" class="console-content">
+                Waiting for process to start...
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

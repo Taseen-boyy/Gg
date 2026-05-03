@@ -1,0 +1,41 @@
+body {
+    margin: 0; padding: 0;
+    background: #6259e8;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh; font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+.stars {
+    position: absolute; width: 100%; height: 100%;
+    background: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+    background-size: 60px 60px; z-index: -1;
+}
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px); border-radius: 24px;
+    padding: 30px; width: 90%; max-width: 420px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.title { color: white; text-align: center; font-size: 24px; margin-bottom: 20px; }
+.input-group { margin-bottom: 15px; }
+label { color: white; display: block; margin-bottom: 5px; font-size: 14px; }
+input, select {
+    width: 100%; padding: 12px; background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px;
+    color: white; box-sizing: border-box;
+}
+.start-btn {
+    width: 100%; padding: 15px; background: linear-gradient(to right, #ff8a71, #48d1cc);
+    border: none; border-radius: 12px; color: white; font-weight: bold;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: 0.3s;
+}
+.start-btn:hover { transform: scale(1.02); }
+.play-icon { background: #007bff; padding: 2px 6px; border-radius: 4px; margin-right: 8px; }
+.console-box { margin-top: 20px; }
+.console-content {
+    background: rgba(0, 0, 0, 0.5); border-radius: 8px;
+    padding: 10px; height: 100px; overflow-y: auto;
+    font-family: monospace; font-size: 12px; color: #00ff00;
+}
