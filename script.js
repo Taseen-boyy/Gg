@@ -13,7 +13,7 @@ async function sendToHelix() {
     consoleDiv.innerHTML = "> Connecting to Helix Clouds...<br>";
 
     try {
-        const response = await fetch("http://cloner.taseen.ggff.net/clone", {
+        const response = await fetch("https://cloner.taseen.ggff.net/clone", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token, sourceId, destId, type })
